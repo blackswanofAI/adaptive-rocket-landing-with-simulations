@@ -16,3 +16,10 @@ Author: Kyle Harrison
 Organization: Platinum Castles Inc.  
 Copyright (c) 2026 Kyle Harrison. All rights reserved.  
 Unauthorized copying, distribution, or use of this code, in whole or in part, for commercial or public purposes is strictly prohibited.
+esource-Constrained Gating Framework (RCGF)
+The Resource-Constrained Gating Framework (RCGF) acts as an intelligent supervisor for rocket landing dynamics, using a dedicated gating layer to manage control efforts based on real-time feedback and PID variables. By dynamically adjusting thrust and orientation commands, the system ensures high-precision stability and optimizes performance even within strict hardware and environmental limitations.
+Central to this architecture is the "Truth Anchor"—a state estimator that maintains a consistent "mental map" of physics. Rather than chasing sensor jitter or bad data, the RCGF validates every measurement against expected dynamics, allowing the craft to maintain a stable trajectory through high winds, thermal stress, and signal noise. This transition from reactive correction to predictive validation represents a shift toward more resilient, autonomous aerospace recovery.
+What this version adds:
+• The "Truth Anchor" Branding: It introduces your specific terminology for how the system filters noise.
+• Adverse Conditions: It mentions high winds and thermal stress, giving the "Resource-Constrained" part of the name more tangible stakes.
+• Predictive vs. Reactive: It highlights the "intellectual" side of the supervisor, moving beyond simple PID loops.
