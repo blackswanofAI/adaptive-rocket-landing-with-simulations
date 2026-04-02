@@ -1,0 +1,16 @@
+Adaptive Rocket Landing Simulation: PID vs. RCGF
+This repository contains a Python-based comparative study of autonomous rocket landing controllers, evaluating a standard baseline against a gated resilient framework. The simulation evaluates how control inputs are modulated under resource constraints, system stress, and external disturbances.  
+Simulation Scenarios
+The implementation provides three distinct ways to visualize and analyze landing performance under identical dynamic conditions.  
+• Standard PID Baseline: This simulation models a vertical landing using a traditional controller with anti-windup logic to manage altitude and velocity errors. It operates without awareness of resource depletion or structural safety limits.  
+• RCGF Gated Landing: This mode enables the Resource-Constrained Gating Framework (RCGF) to throttle the controller based on fuel availability and system stress. It demonstrates how the system prioritizes survival by dampening thrust when the rocket is under high-velocity stress or running low on fuel.  
+• Environmental Disturbance & Safety: A simulation focused on "worst-case" handling, featuring a downward gust disturbance between t=5 s and t=7 s. It includes real-time structural safety monitoring that triggers a warning if thrust exceeds the 2200 N limit.  
+Flight Telemetry & Signals
+The simulation generates a four-quadrant visualization to track the following flight data:  
+• Altitude (m): Tracks the descent profile from an initial 100 m height to touchdown.  
+• Velocity (m/s): Monitors the impact speed and the controller's ability to recover from atmospheric gusts.  
+• Thrust Output (N): Compares the raw PID command against the gated RCGF signal to show how the framework stays within safety envelopes.  
+• Fuel Mass (kg): Displays real-time consumption and the effectiveness of the soft-landing throttle reduction as fuel nears zero.  
+Credits & Copyright
+Author: Kyle Harrison
+Organization: Platinum Castles Inc.
