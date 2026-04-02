@@ -23,3 +23,4 @@ What this version adds:
 • The "Truth Anchor" Branding: It introduces your specific terminology for how the system filters noise.
 • Adverse Conditions: It mentions high winds and thermal stress, giving the "Resource-Constrained" part of the name more tangible stakes.
 • Predictive vs. Reactive: It highlights the "intellectual" side of the supervisor, moving beyond simple PID loops.
+Kyle Harrison Prior Art All Rights Reserved Camrose AB Canada
